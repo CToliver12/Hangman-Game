@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!--Document responsive across devices.-->
+	<!--Document's character set. -->
+	<meta charset="UTF-8">
+	<title>Hangman Game</title>
+	<!--Linking CSS -->
+	<link rel="stylesheet" type="text/css" href="assets\css\style.css">
+	<!-- Linking Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
+</head>
+<body>
+
+<div class="header-container">
+	<header> 90's Music Edition</header>
+	</div>
+
+	<div class="main-container">
+	<section id="90s-music-panel">
+	<img id="ninetysbackground-image" src="assets/images/ninetysbkgrd.png" alt="ninetysbkgrd default image.">
+	<audio id="music" controls>
+	<source src "">
+	</audio>
+	</section>
+	<section id="hangman-panel">
+	<p>
+		PRESS ANY KEY TO GET STARTED
+	</p>
+	
+	<p>
+		WINS!
+	</p>
+	
+	<p id="win-count">
+	</p>
+	
+	<p>
+		CURRENT WORD
+	</p>
+	
+	<p id="word-placeholder">_ _ _ _ _ _ _ _ _
+	</p>
+	
+	<p>
+		NUMBER OF GUESSES REMAINING
+	</p>
+	
+	<p id="guess-count">
+	</p>
+	
+	<p>
+		LETTERS ALREADY GUESSED
+	</p>
+	<p id="letters-guessed">
+	</p>
+	</section>
+</div>
+<!--Linking JavaScipt-->
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
