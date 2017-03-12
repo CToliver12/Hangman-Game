@@ -1,9 +1,7 @@
 <!Doctype html>
 <html lang="en-us">
 <head>
-	<!--Document responsive across devices. -->
-	<meta name="viewport" content="width=device-width, intial scale=1">
-	<!--Document's character set. -->
+<!--Document's character set. -->
 	<meta charset="UTF-8">
 	<title>Hangman Game</title>
 	<!--Linking Google Fonts. -->
@@ -40,50 +38,55 @@
 <div class="container main">
 	<div class="row fade-in">
 	<section class="coll-md-12">
-	<div class="page-header"><h2> Hangman: 90's Music Edition</h2></div>
+	<div class="page-header"><h2> Hangman: Best Michael Jackson Songs</h2></div>
 
 		<blockquote>
-			<p>If there was a problem, yo, I'll solve it. Check out the hook while my DJ revolves it.</p>
-			<small class="text-muted"><cite title="Source Title"> Vanilla Ice</cite></small>
+		<img id="currentImage" class="img-responsive center-block fade-in" src="assets/images/MJsocks.jpg"></div>
+			<p>Human knowledge consists not only of libraries of parchment and ink - it is also comprised of the volumes of knowledge that are written on the human heart, chiseled on the human soul, and engraved on the human psyche.</p>
+			<small class="text-muted"><cite title="Source Title"> Michael Jackson </cite></small>
 		</blockquote>
 
 		<div><br/><br/><div>
 	</section>
 	</div>
 
-	<div class="row fade-in bottom-margin">
-		<section class="col-md-12 text-center">
-		<p>Press any letter key to play!</p>
-		<p> Wins: <span id"winCount">0</span></p>
-	</section>
-</div>
+		<div class="panel panel default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Word to Guess</h3>
+			</div>
+			<div class="panel-body">
+				<h2 > </h2> <span id="wordToGuess"></span>
+			</div>
+		</div>
 
-<div class="row fade-in bottom-margin">
-	<section class="col-md-5">
-	<div class="bottom-margin"><img id="currentImage" class="img-responsive center-block fade-in" src="assets/images/earphones.jpg"></div>
-	</section>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				Wrong Guesses: <span id="wrongGuesses"></span>
+			</div>
+		</div>
 
-<section class="col-md-7">
-<p class="text-center"> Guesses remaining: <span id="guessesRemaining">10</span></p>
 
-<div class="bottom-margin"></div>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				Guesses Left: <span id="numGuesses">9</span>
+			</div>
+		</div>
 
-<div id="wordStatus" class="text-center"> LOADING...</div>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				Win Counter: <span id="winCounter">0</span>
+			</div>
+		</div>
 
-<div class="bottom-margin"></div>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				Loss Counter: <span id="lossCounter">0</span>
+			</div>
 
-<div id="lettersGuessed" class="text-center">&nbsp;</div>
 </section>
 </div>
 
-<div class="row fade-in bottom-margin">
-	<section class="col-md-12 text-center">
-<div>
-<button id="musicToggle" class=btn btn-default">Music: <span id="musicPlaying">Playing</span></button>&nbsp;&nbsp;
-<button id="sfxToggle" class="btn btn-default">Sound Effects: <span id= "sfxOn">On</span></button>
-</div>
-</section>
-</div>
+
 </div>
 
 <Footer class="footer">
@@ -94,7 +97,7 @@ Copyright 2017 Candace Toliver</p>
 </Footer>
 
 <!--Linking Javascript -->
-	<script type="text/javascript" src="assets/javascript/game2.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 
 </body>
